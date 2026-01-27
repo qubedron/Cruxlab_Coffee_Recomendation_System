@@ -3,6 +3,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from typing import List, Tuple
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 def filter_by_equipment(user_owned_equipment: list, recipes_df: pd.DataFrame) -> pd.DataFrame:
